@@ -24,8 +24,8 @@ class minHeap {
 		while (index * 2 < current) {
 			int leftChild = index * 2;
 			int rightChild = index * 2 + 1;
-
 			int smallest = index;
+			
 			if (leftChild < current && heap[leftChild] < heap[smallest]) {
 				smallest = leftChild;
 			}
