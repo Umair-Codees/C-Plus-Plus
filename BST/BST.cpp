@@ -38,7 +38,11 @@ class BST {
             node->right = removeNode(node->right, value);
         }
         else {
-            if (node->left == nullptr) {
+            if (node->left == nullptr && node->right == nullptr) {
+                delete node;
+                return nullptr;
+            }
+            else if (node->left == nullptr) {
                 Node* temp = node->right;
                 delete node;
                 return temp;
@@ -48,10 +52,7 @@ class BST {
                 delete node;
                 return temp;
             }
-            Node* temp = node->right;
-            while (temp && temp->left != nullptr) {
-                temp = temp->left;
-            }
+            Node* temp = min(node->right);
             node->data = temp->data;
             node->right = removeNode(node->right, temp->data);
         }
@@ -72,31 +73,43 @@ class BST {
         }
         return false;
     }
-    int kthMaxNode(Node* root, int k, int& count) {
-        if (root == nullptr) {
-            return -1;
+    Node* min(Node* temp) {
+        while (temp && temp->left != nullptr) {
+            temp = temp->left;
         }
-        int right = kthMaxNode(root->right, k, count);
-        if (right != -1) {
+        return temp;
+    }
+    Node* max(Node* temp) {
+        while (temp && temp->right != nullptr) {
+            temp = temp->right;
+        }
+        return temp;
+    }
+    Node* kthMaxNode(Node* root, int k, int& count) {
+        if (root == nullptr) {
+            return nullptr;
+        }
+        Node* right = kthMaxNode(root->right, k, count);
+        if (right != nullptr) {
             return right;
         }
         count++;
         if (count == k) {
-            return root->data;
+            return root;
         }
         return kthMaxNode(root->left, k, count);
     }
-    int kthMinNode(Node* root, int k, int& count) {
+    Node* kthMinNode(Node* root, int k, int& count) {
         if (root == nullptr) {
-            return -1;
+            return nullptr;
         }
-        int left = kthMinNode(root->left, k, count);
-        if (left != -1) {
+        Node* left = kthMinNode(root->left, k, count);
+        if (left != nullptr) {
             return left;
         }
         count++;
         if (count == k) {
-            return root->data;
+            return root;
         }
         return kthMinNode(root->right, k, count);
     }
@@ -144,9 +157,7 @@ public:
             cout << "BST is Empty.";
             return -1;
         }
-        while (temp->right != nullptr) {
-            temp = temp->right;
-        }
+        temp = max(temp);
         return temp->data;
     }
     int min() {
@@ -155,9 +166,7 @@ public:
             cout << "BST is Empty.";
             return -1;
         }
-        while (temp->left != nullptr) {
-            temp = temp->left;
-        }
+        temp = min(temp);
         return temp->data;
     }
     int kthMax(int k) {
@@ -165,14 +174,16 @@ public:
             cout << "BST is empty.";
         }
         int count = 0;
-        return kthMaxNode(root, k, count);
+        Node* temp = kthMaxNode(root, k, count);
+        return temp->data;
     }
     int kthMin(int k) {
         if (root == nullptr) {
             cout << "BST is empty.";
         }
         int count = 0;
-        return kthMinNode(root, k, count);
+        Node* temp = kthMinNode(root, k, count);
+        return temp->data;
     }
     void inOrder() {
         inOrderTraversal(root);
@@ -203,7 +214,7 @@ int main() {
     obj.insert(9);
     obj.insert(1);
 
-    cout << "\nInOrder Traversal in BST   : ";
+    cout << "InOrder Traversal in BST   : ";
     obj.inOrder();
 
     cout << "\nPreOrder Traversal in BST  : ";
@@ -219,15 +230,24 @@ int main() {
     obj.search(4);
 
     obj.remove(2);
+    obj.remove(7);
 
     cout << "\nAfter Remove Value from BST : ";
     obj.display();
 
     cout << endl;
-    cout << "Max Value in BST is : " << obj.max() << endl;
-    cout << "4th Max Value in BST is : " << obj.kthMax(4) << endl << endl;
-    cout << "Min Value in BST is : " << obj.min() << endl;
-    cout << "4th Min Value in BST is : " << obj.kthMin(4) << endl;
+    if (obj.max() != -1) {
+        cout << "Max Value in BST is : " << obj.max() << endl;
+    }
+    if (obj.kthMax(4) != -1) {
+        cout << "4th Max Value in BST is : " << obj.kthMax(4) << endl << endl;
+    }
+    if (obj.min() != -1) {
+        cout << "Min Value in BST is : " << obj.min() << endl;
+    }
+    if (obj.kthMin(4) != -1) {
+        cout << "3rd Min Value in BST is : " << obj.kthMin(3) << endl;
+    }
 
 
     return 0;
