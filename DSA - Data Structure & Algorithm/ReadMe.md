@@ -3,9 +3,9 @@ Welcome to the C-Plus-Plus DSA repository! This project is a comprehensive colle
 
 #  Topics Covered in This Repository:
 ## 1. Linked List:
-Singly Linked List: Learn how to implement a simple singly linked list and operations like insertion, deletion, and traversal.
-Doubly Linked List: Explore doubly linked lists with bidirectional traversal, insertion, and deletion from both ends.
-Circular Linked List: Understand circular linked lists and their applications in problems like round-robin scheduling and memory management.
+Singly Linked List: Learn how to implement a simple singly linked list and operations like insertion, deletion, and traversal.  
+Doubly Linked List: Explore doubly linked lists with bidirectional traversal, insertion, and deletion from both ends.  
+Circular Linked List: Understand circular linked lists and their applications in problems like round-robin scheduling and memory management.  
 
 ## 3. Stack:
 Stack Basics: Learn the stack data structure and how to implement its basic operations such as push, pop, and peek.
