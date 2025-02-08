@@ -2,7 +2,7 @@
 Welcome to the C-Plus-Plus DSA (Data Structures and Algorithms) repository! This section focuses specifically on Linked Lists. Here you will find detailed implementations of various types of linked lists, along with their algorithms, explanations, and time complexities.
 
 # Folder Structure:
-C-Plus-Plus/DSA/Linked-List/: Contains all implementations related to Linked Lists in C++.
+C-Plus-Plus/DSA/Linked-List/: Contains all implementations related to Linked Lists in C++.\n
 Singly Linked List: Implementation of singly linked list and its operations like insertion, deletion, and traversal.
 Doubly Linked List: Code for doubly linked list and related operations such as insertion, deletion, and traversal.
 Circular Linked List: Implementation of circular linked list with code for insertions and deletions.
