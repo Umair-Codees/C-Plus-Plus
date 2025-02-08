@@ -1,4 +1,4 @@
-# C-Plus-Plus DSA (Data Structures and Algorithms)
+## C-Plus-Plus DSA (Data Structures and Algorithms)
 Welcome to the C-Plus-Plus DSA repository! This project is a comprehensive collection of essential data structures and algorithms implemented in C++. The goal of this repository is to provide easy-to-follow code examples for learners, interviewees, and developers to strengthen their knowledge of Data Structures and Algorithms.
 
 #  Topics Covered in This Repository:
