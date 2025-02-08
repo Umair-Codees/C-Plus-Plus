@@ -7,7 +7,7 @@ Singly Linked List: Implementation of singly linked list and its operations like
 Doubly Linked List: Code for doubly linked list and related operations such as insertion, deletion, and traversal.
 Circular Linked List: Implementation of circular linked list with code for insertions and deletions.
 Algorithms: Common linked list algorithms like reversing the list, detecting cycles, and merging sorted lists.
-Topics Covered in This Section:
+# Topics Covered in This Section:
 1. Singly Linked List
 Basic Operations: Insertion (at head, tail, and middle), deletion (by position or value), traversal, and search.
 Time Complexity: Analysis of each operation.
