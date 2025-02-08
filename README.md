@@ -8,7 +8,7 @@ Functions: Learn about functions, function overloading, recursion, and more.
 Input/Output: Understanding the basics of reading from and writing to the console and files.  
 Arrays and Strings: Working with arrays and basic string manipulations.  
 Control Structures: Master if-else, switch-case, loops, and how they work in C++.  
-## 2. PF (Problem Solving):
+## 2. PF (Programming fundamentals):
 Practice Problems: A collection of problems designed to strengthen problem-solving skills.  
 Mathematical Problems: Solving problems related to number theory, prime numbers, factorials, etc.  
 Pattern Problems: Pattern generation problems (triangle, pyramid, etc.).  
