@@ -1,5 +1,5 @@
 # C-Plus-Plus DSA: Linked List
-Welcome to the C-Plus-Plus DSA (Data Structures and Algorithms) repository! This section focuses specifically on Linked Lists. Here you will find detailed implementations of various types of linked lists, along with their algorithms, explanations, and time complexities.
+Welcome to the C-Plus-Plus DSA (Data Structures and Algorithms) repository! This section focuses specifically on # Linked Lists. Here you will find detailed implementations of various types of linked lists, along with their algorithms, explanations, and time complexities.
 
 # Folder Structure:
 C-Plus-Plus/DSA/Linked-List/: Contains all implementations related to Linked Lists in C++.
