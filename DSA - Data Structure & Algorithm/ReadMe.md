@@ -11,27 +11,27 @@ Welcome to the C-Plus-Plus DSA repository! This project is a comprehensive colle
 Stack Basics: Learn the stack data structure and how to implement its basic operations such as push, pop, and peek.  
 Applications of Stack: Solve problems like balanced parentheses, infix to postfix conversion, and evaluating expressions using stacks.  
 ## 4. Queue:
-Queue Basics: Understand the queue data structure and implement its basic operations (enqueue, dequeue, front).  
-Circular Queue and Priority Queue: Explore specialized versions of queues like circular queues and priority queues (heap-based).  
+1. Queue Basics: Understand the queue data structure and implement its basic operations (enqueue, dequeue, front).  
+2. Circular Queue and Priority Queue: Explore specialized versions of queues like circular queues and priority queues (heap-based).  
 ## 5. Trees:
-Binary Tree: Explore tree traversal techniques (in-order, pre-order, post-order) and learn how to implement basic binary tree operations.  
-Binary Search Tree (BST): Learn about searching, insertion, and deletion operations in BSTs.  
-AVL Trees and Red-Black Trees: Learn about self-balancing trees and their importance in maintaining efficient performance.  
-Heap (Min and Max): Understand heaps and their application in sorting and priority queues.  
+1. Binary Tree: Explore tree traversal techniques (in-order, pre-order, post-order) and learn how to implement basic binary tree operations.  
+2. Binary Search Tree (BST): Learn about searching, insertion, and deletion operations in BSTs.  
+3. AVL Trees and Red-Black Trees: Learn about self-balancing trees and their importance in maintaining efficient performance.  
+4. Heap (Min and Max): Understand heaps and their application in sorting and priority queues.  
 ## 6. Sorting:
-Bubble Sort: Implement the simple but inefficient bubble sort algorithm.  
-Merge Sort: Implement the divide-and-conquer approach to sorting.  
-Quick Sort: Learn the fast, recursive sorting technique based on pivot elements.  
-Insertion Sort, Selection Sort: Explore other simpler sorting algorithms and their time complexities.  
+1. Bubble Sort: Implement the simple but inefficient bubble sort algorithm.  
+2. Merge Sort: Implement the divide-and-conquer approach to sorting.  
+3. Quick Sort: Learn the fast, recursive sorting technique based on pivot elements.  
+4. Insertion Sort, Selection Sort: Explore other simpler sorting algorithms and their time complexities.  
 ## 7. Searching:
-Linear Search: Basic searching algorithm that checks each element one by one.  
-Binary Search: Efficient searching algorithm for sorted arrays (O(log n) time complexity).  
-Jump Search: A hybrid search algorithm that improves linear search by jumping ahead in steps.  
+1. Linear Search: Basic searching algorithm that checks each element one by one.  
+2. Binary Search: Efficient searching algorithm for sorted arrays (O(log n) time complexity).  
+3. Jump Search: A hybrid search algorithm that improves linear search by jumping ahead in steps.  
 ## 8. Graphs:
-Graph Representation: Learn how to represent graphs using adjacency matrices and lists.  
-Breadth-First Search (BFS): Implement BFS to explore graphs level by level.  
-Depth-First Search (DFS): Understand DFS and use it to solve problems like finding connected components.  
-Dijkstra’s Algorithm: Shortest path algorithm for weighted graphs.  
+1. Graph Representation: Learn how to represent graphs using adjacency matrices and lists.  
+2. Breadth-First Search (BFS): Implement BFS to explore graphs level by level.  
+3. Depth-First Search (DFS): Understand DFS and use it to solve problems like finding connected components.  
+4. Dijkstra’s Algorithm: Shortest path algorithm for weighted graphs.  
 ## 9. Recursion:
 Learn fundamental recursive problem-solving techniques and practice solving problems using recursion.  
 ## 10. Dynamic Programming (DP):
